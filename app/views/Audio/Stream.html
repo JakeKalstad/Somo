@@ -1,0 +1,22 @@
+<div class="audio container">
+	{{ range $value := .user.Artist.Tracks }}
+		<div class='audio-player'>
+			<h2>{{$value.Name}}</h2>
+			<audio controls>
+					<source
+						id='track'
+						src="/public/audio/{{$value.Handle}}{{$value.Filename}}"
+						type="audio/mpeg" />
+			</audio>
+            <button data-id="{{$value.UID}}" class='delete button'>&#10006;</button>
+			<div class='tags'>
+				<span class='tag'>
+					{{ range $value := $value.Tags }}
+						{{$value}},
+					{{end}}
+				</span>
+			</div>
+			<p>{{$value.Description}}</p>
+		</div>
+	{{end}}
+</div>

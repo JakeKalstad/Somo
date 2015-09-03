@@ -1,0 +1,31 @@
+{{set . "title" "Upload Multiple Files"}}
+{{template "header.html" .}}
+
+<div class="container">
+	<div class="row">
+		<div class="span6">
+			<form method="post" id='track_upload_form' action="{{url "Audio.HandleUpload"}}" enctype="multipart/form-data">
+				<p>
+					<label for="file1"><strong>Title</strong></label>
+					<input type="text" name="name" id="track_name">
+				</p>
+				<p>
+					<label for="file1"><strong>File 1*:</strong></label>
+					<input type="file" name="file[]" id="file1" class="span6">
+				</p>
+				<p>
+					<label for="file1"><strong>Description</strong></label>
+					<input type="text" name="description" id="track_description">
+				</p>
+				<p>
+					<label for="file1"><strong>Tags</strong></label>
+					<input type="text" name="tags" id="tags">
+				</p>
+				<hr>
+				<input type="button" value="Upload" class="btn btn-large btn-success track_upload">
+			</form>
+		</div>
+	</div>
+</div>
+
+{{template "footer.html" .}}

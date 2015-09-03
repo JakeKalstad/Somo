@@ -1,0 +1,51 @@
+<div class="account_settings">
+  <div class="form">
+        <ul class="tab-group">
+          <li class="tab active"><a href="#user_account">User</a></li>
+          <li class="tab"><a href="#artist_account">Artist</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="user_account">
+            <h1>User Account Settings</h1>
+            <form>
+            <div class="top-row">
+              <div class="field-wrap">
+              <label  class='err_email'>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" class='act_email' required autocomplete="off"/>
+            </div>
+            </div>
+            <div class="field-wrap">
+              <label class='err_password'>
+                Reset A Password<span class="req">*</span>
+              </label>
+              <input type="password" class='s_password' required autocomplete="off"/>
+            </div>
+            <button type="button" class="save_button button button-block">Save Changes</button>
+            </form>
+          </div>
+          <div id="artist_account">   
+            <h1>Artist Account Settings</h1>
+            <form>
+            <div class="top-row">
+              <div class="field-wrap">
+              <label class='err_name' >
+                Name<span class="req">*</span>
+              </label>
+              <input type="text" class='art_name' required autocomplete="off"/>
+            </div>
+            </div>
+            
+            <div class="field-wrap">
+              <label class='err_desc'>
+                Description<span class="req">*</span>
+              </label>
+              <input type="password" class='art_description' required autocomplete="off"/>
+            </div>
+            <button type="button" class="save_button button button-block">Save Changes</button>
+            </form>
+          </div>
+        </div>
+  </div>
+</div>

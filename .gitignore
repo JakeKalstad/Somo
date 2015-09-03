@@ -1,0 +1,4 @@
+app/test-results/*
+app/tmp/*
+public/audio/*
+data/*

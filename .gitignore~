@@ -1,0 +1,5 @@
+app/test-results/
+app/tmp/
+app/routes/
+public/audio/
+data/*
